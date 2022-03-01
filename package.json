@@ -2,11 +2,14 @@
   "name": "curso-practico-react",
   "version": "1.0.0",
   "description": "react eshop",
+  "homepage": "https://carlosrubendg.github.io/curso-practico-react",
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack serve --open",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "keywords": [
     "react",
